@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body{
+    background-color: black;
+  }
+
+  h1{
+    color: white;
+
+  }
+</style>
+
+<body>
+  <div>
+    <h1 id="show"></h1>
+    <img id="img" width="20%" height="20%" alt="">
+  </div>
+
+
+  <script>
+
+    const show = document.querySelector("#show");
+    var imgs = document.querySelector("#img")
+    var name = prompt("enter your name");
+    var message = "happy diwali mr'  " + name;
+
+    if (name.includes("shubhankar")) {
+      show.innerHTML = message;
+      imgs.src = "code2.png"
+    }
+    else if (name.includes("pravhat")) {
+      show.innerHTML = message;
+     imgs.src = "code.webp"
+    }
+    else if (name.includes("chandrakanta")) {
+      show.innerHTML = message;
+      imgs.src = "ea.png"
+    }
+    else if (name.includes("rahul")) {
+      show.innerHTML = message;
+      imgs.src = "img.jpg"
+    }
+    else if (name.includes("ashok")) {
+      show.innerHTML = message;
+      imgs.src = "lamp.png"
+    }
+    else if (name.includes("kanha")) {
+      show.innerHTML = message;
+      imgs.src = "light.png"
+    }
+  </script>
+</body>
+
+</html>
